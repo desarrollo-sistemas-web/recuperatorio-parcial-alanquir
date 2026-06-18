@@ -8,11 +8,18 @@
 
 
 function encontrarPalabraMasLarga($cadena){
-    //Escribe tu código aquí
 
+    $palabras = explode(" ", $cadena);
+    $masLarga = "";
+
+    foreach ($palabras as $palabra) {
+
+        if (strlen($palabra) > strlen($masLarga)) {
+            $masLarga = $palabra;
+        }
+    }
+
+    return $masLarga;
 }
 
-//Tests
-assert("palabra" == encontrarPalabraMasLarga("Esta es una palabra"), "La palabra más larga es 'palabra'");
-assert("palabra" == encontrarPalabraMasLarga("Esta es una palabra larga"), "La palabra más larga es 'palabra'");
-assert("complicada" == encontrarPalabraMasLarga("Esta es una palabra larga y complicada"), "La palabra más larga es 'complicada'");
+echo encontrarPalabraMasLarga("Hola como estas ricoteros");

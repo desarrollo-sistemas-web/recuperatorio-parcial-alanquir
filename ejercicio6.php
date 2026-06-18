@@ -4,3 +4,17 @@
 // Complejidad: MEDIA (2 puntos)
 
 //Tu código aquí
+$numero = rand(1, 100);
+
+echo "Numero aleatorio: $numero<br><br>";
+
+echo "De 1 hasta $numero:<br>";
+for ($i = 1; $i <= $numero; $i++) {
+    echo $i . " ";
+}
+echo "<br><br>";
+
+echo "De $numero hasta 1:<br>";
+for ($i = $numero; $i >= 1; $i--) {
+    echo $i . " ";
+}

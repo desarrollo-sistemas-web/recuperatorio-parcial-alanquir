@@ -5,8 +5,23 @@
 // Complejidad: BAJA (1 punto)
 
 function obtenerDiaSemana($numero){
-    //Escribe tu código aquí
+    if ($numero == 1) {
+        echo "lunes";
+    } elseif ($numero == 2) {
+        echo "martes";
+    } elseif ($numero == 3) {
+        echo "miercoles";
+    } elseif ($numero == 4) {
+        echo "jueves";
+    } elseif ($numero == 5) {
+        echo "viernes";
+    } elseif ($numero == 6) {
+        echo "sabadode";
+    } else {
+        echo "domingo";
+    }
 }
+
 
 //Tests
 assert("Lunes" == obtenerDiaSemana(1), "El dia 1 es Lunes");
